@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Tulpar Oto Kurtarma | 7/24 Yol Yardım</title>
-<meta name="description" content="Tulpar Oto Kurtarma - İstanbul, Kocaeli, Gebze, Yalova ve Sakarya'da 7/24 oto kurtarma ve yol yardım hizmeti.">
+
+<meta name="description" content="Tulpar Oto Kurtarma - İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre bölgelerde 7/24 oto kurtarma ve yol yardım hizmeti.">
+
+<meta name="theme-color" content="#03090e">
 
 <style>
 *{
@@ -19,218 +22,232 @@ html{
 }
 
 body{
-  background:#03080d;
-  color:white;
+  background:#02070b;
+  color:#fff;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  line-height:1.45;
 }
 
-.container{
-  width:min(100%,500px);
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.page{
+  width:min(100%,520px);
   margin:auto;
   background:#061019;
   min-height:100vh;
   overflow:hidden;
+  box-shadow:0 0 80px rgba(0,0,0,.75);
 }
 
-/* ÜST MENÜ */
+/* HEADER */
 
 header{
   position:sticky;
   top:0;
   z-index:100;
-  background:rgba(3,8,13,.96);
-  border-bottom:1px solid #1b2b37;
-  padding:10px 15px;
+  min-height:95px;
+  padding:10px 18px;
   display:flex;
   align-items:center;
   justify-content:space-between;
+  background:rgba(2,8,13,.97);
+  border-bottom:1px solid #21313d;
+  backdrop-filter:blur(12px);
 }
 
-.logo{
-  display:flex;
-  align-items:center;
-}
-
-.logo img{
+.header-logo{
   width:155px;
-  max-height:75px;
+  height:75px;
   object-fit:contain;
 }
 
-.menu{
-  font-size:31px;
-  font-weight:bold;
+.menu-icon{
+  font-size:34px;
+  line-height:1;
+  font-weight:700;
 }
 
-/* ANA GÖRSEL */
+/* HERO */
 
 .hero{
   position:relative;
-  min-height:610px;
-  padding:42px 24px 25px;
+  min-height:760px;
+  background:#02080d;
+  overflow:hidden;
+}
+
+.hero-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
   background:
-    linear-gradient(to bottom,rgba(3,8,13,.18),#061019 96%),
-    radial-gradient(circle at 80% 30%,rgba(230,0,25,.30),transparent 42%),
-    linear-gradient(145deg,#071722,#020508);
+    linear-gradient(to bottom,rgba(0,5,9,.15) 0%,rgba(0,5,9,.35) 37%,rgba(0,5,9,.94) 100%),
+    linear-gradient(to right,rgba(0,0,0,.48),rgba(0,0,0,.06));
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:50px 28px 36px;
+  min-height:760px;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
 }
 
 .badge{
   position:absolute;
-  right:20px;
-  top:30px;
-  background:linear-gradient(135deg,#9e0000,#f11220);
-  padding:12px 17px;
-  border-radius:8px;
-  transform:rotate(-2deg);
+  top:34px;
+  right:22px;
+  background:linear-gradient(135deg,#a90000,#ff1724);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;
+  padding:14px 20px;
   text-align:center;
-  box-shadow:0 10px 30px #000;
+  box-shadow:0 12px 35px rgba(0,0,0,.55);
+  transform:rotate(-2deg);
 }
 
 .badge strong{
   display:block;
-  font-size:35px;
+  font-size:37px;
   line-height:1;
 }
 
 .badge span{
+  display:block;
+  margin-top:4px;
   font-size:12px;
-  font-weight:800;
+  font-weight:900;
 }
 
 .hero h1{
-  margin-top:100px;
-  font-size:44px;
+  font-size:48px;
   line-height:.98;
-  max-width:340px;
+  letter-spacing:-1px;
+  text-shadow:0 5px 20px rgba(0,0,0,.65);
 }
 
-.red{
-  color:#ff1824;
-}
-
-.hero p{
-  margin-top:18px;
-  color:#d4dce2;
-  font-size:18px;
-  max-width:330px;
-}
-
-/* ÇEKİCİ */
-
-.truck{
-  margin:35px auto 15px;
-  width:90%;
-  height:210px;
-  position:relative;
-  border-radius:20px;
-  background:
-    radial-gradient(circle at 50% 85%,rgba(255,25,35,.27),transparent 55%),
-    linear-gradient(160deg,#101d26,#030609);
-  border:1px solid #1b2d39;
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-
-.truck::before{
-  content:"";
-  position:absolute;
-  bottom:30px;
-  width:90%;
-  height:3px;
-  background:#c7161e;
-  box-shadow:0 0 18px red;
-}
-
-.truck-icon{
-  font-size:105px;
-  filter:drop-shadow(0 10px 12px #000);
-}
-
-.truck-text{
-  position:absolute;
-  bottom:13px;
-  font-weight:900;
-  letter-spacing:3px;
-}
-
-/* ÖZELLİKLER */
-
-.features{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:7px;
-  margin-top:22px;
-}
-
-.feature{
-  text-align:center;
-  font-size:11px;
-  color:#d9e0e5;
-}
-
-.feature b{
-  display:block;
-  font-size:25px;
-  margin-bottom:6px;
-}
-
-/* BUTONLAR */
-
-.actions{
-  padding:0 20px 24px;
-}
-
-.call,
-.whatsapp{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  width:100%;
-  min-height:67px;
-  border-radius:12px;
-  margin:11px 0;
-  color:white;
-  text-decoration:none;
-  font-weight:900;
-  font-size:19px;
-}
-
-.call{
-  background:linear-gradient(135deg,#d60010,#ff202c);
-  box-shadow:0 8px 25px rgba(255,0,20,.20);
-}
-
-.whatsapp{
-  background:linear-gradient(135deg,#079838,#10ca55);
-  box-shadow:0 8px 25px rgba(0,200,80,.16);
-}
-
-.actions small{
-  display:block;
-  text-align:center;
-  color:#9eabb4;
-  margin-top:9px;
-}
-
-/* BAŞLIKLAR */
-
-section{
-  padding:28px 20px;
-  border-top:1px solid #172630;
-}
-
-.section-title{
-  font-size:24px;
-  margin-bottom:18px;
-}
-
-.section-title span{
+.hero h1 .red{
   color:#ff1724;
 }
 
-/* HİZMETLER */
+.hero-sub{
+  margin-top:18px;
+  max-width:390px;
+  font-size:19px;
+  color:#d9e0e5;
+  text-shadow:0 2px 12px rgba(0,0,0,.8);
+}
+
+.hero-tags{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin-top:26px;
+}
+
+.hero-tag{
+  text-align:center;
+  font-size:11px;
+  font-weight:700;
+  color:#e9edf0;
+}
+
+.hero-tag b{
+  display:block;
+  font-size:25px;
+  margin-bottom:5px;
+}
+
+/* ACTIONS */
+
+.actions{
+  padding:22px 22px 25px;
+  background:#061019;
+}
+
+.action-btn{
+  min-height:70px;
+  border-radius:13px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:14px;
+  font-weight:900;
+  font-size:20px;
+  box-shadow:0 10px 28px rgba(0,0,0,.26);
+}
+
+.call-btn{
+  background:linear-gradient(135deg,#d60010,#ff202d);
+}
+
+.wa-btn{
+  background:linear-gradient(135deg,#079b38,#0fc754);
+}
+
+.mini-info{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  border-top:1px solid #182833;
+  border-bottom:1px solid #182833;
+  padding:18px 0 2px;
+  margin-top:18px;
+}
+
+.mini-info div{
+  text-align:center;
+  font-size:11px;
+  color:#cfd6db;
+  min-height:68px;
+}
+
+.mini-info b{
+  display:block;
+  font-size:24px;
+  margin-bottom:4px;
+}
+
+/* GENERAL SECTIONS */
+
+section{
+  padding:34px 24px;
+  border-top:1px solid #1a2a35;
+}
+
+.section-title{
+  font-size:28px;
+  margin-bottom:18px;
+  letter-spacing:-.4px;
+}
+
+.section-title .red{
+  color:#ff1724;
+}
+
+.section-sub{
+  color:#aab7c0;
+  margin-bottom:22px;
+  font-size:16px;
+  line-height:1.6;
+}
+
+/* SERVICES */
 
 .services{
   display:grid;
@@ -239,162 +256,219 @@ section{
 }
 
 .service{
-  background:linear-gradient(145deg,#101e28,#081018);
-  border:1px solid #1d3443;
-  border-radius:12px;
-  padding:20px 12px;
+  min-height:132px;
+  border-radius:14px;
+  border:1px solid #213846;
+  background:
+    linear-gradient(145deg,rgba(16,31,42,.98),rgba(7,16,24,.98));
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  min-height:130px;
+  padding:18px 10px;
+  box-shadow:inset 0 0 30px rgba(255,255,255,.012);
 }
 
 .service b{
   display:block;
-  font-size:38px;
-  margin-bottom:10px;
+  font-size:39px;
+  margin-bottom:9px;
 }
 
 .service strong{
-  font-size:15px;
+  font-size:16px;
 }
 
-/* BÖLGELER */
+/* AREAS */
 
 .area{
   background:
-   radial-gradient(circle at 75% 50%,rgba(255,0,20,.25),transparent 35%),
-   #061019;
-}
-
-.area p{
-  color:#b7c2ca;
-  line-height:1.6;
-  margin-bottom:18px;
+    radial-gradient(circle at 75% 50%,rgba(255,0,22,.12),transparent 35%),
+    #061019;
 }
 
 .locations{
   display:grid;
-  gap:9px;
+  gap:10px;
 }
 
 .location{
-  padding:12px 15px;
-  border:1px solid #1b3341;
-  background:#09141d;
-  border-radius:9px;
-  font-weight:700;
+  min-height:61px;
+  border-radius:11px;
+  border:1px solid #213b49;
+  background:#0a1620;
+  display:flex;
+  align-items:center;
+  padding:0 18px;
+  font-weight:900;
+  font-size:16px;
 }
 
 .location::before{
-  content:"●";
-  color:#ff1724;
-  margin-right:10px;
+  content:"";
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:#ff1724;
+  margin-right:13px;
+  box-shadow:0 0 15px rgba(255,23,36,.45);
 }
 
-/* NEDEN TULPAR */
+/* WHY */
 
 .why{
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:10px;
+  gap:12px;
 }
 
-.why div{
-  padding:18px 8px;
-  border:1px solid #20323d;
-  border-radius:10px;
+.why-card{
+  min-height:125px;
+  background:#08131c;
+  border:1px solid #223846;
+  border-radius:14px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  background:#08121a;
+  padding:14px;
 }
 
-.why b{
-  font-size:28px;
+.why-card b{
   display:block;
+  font-size:30px;
   margin-bottom:8px;
 }
 
-/* PROFESYONEL */
+/* FEATURE IMAGE */
 
-.professional{
+.feature-photo{
+  position:relative;
+  min-height:330px;
+  overflow:hidden;
+  padding:0;
+}
+
+.feature-photo img{
+  width:100%;
+  height:330px;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.feature-photo::after{
+  content:"";
+  position:absolute;
+  inset:0;
   background:
-    radial-gradient(circle at 20% 50%,rgba(230,0,20,.25),transparent 45%),
-    #071019;
+    linear-gradient(to top,rgba(3,8,13,.92),rgba(3,8,13,.12) 60%),
+    linear-gradient(to right,rgba(130,0,10,.18),transparent);
 }
 
-.professional h2{
-  font-size:29px;
-  margin-bottom:10px;
+.feature-copy{
+  position:absolute;
+  z-index:2;
+  left:24px;
+  right:24px;
+  bottom:25px;
 }
 
-.professional p{
-  color:#b9c3ca;
-  line-height:1.6;
+.feature-copy h2{
+  font-size:30px;
+  line-height:1.05;
 }
 
-/* SSS */
+.feature-copy .red{
+  color:#ff1724;
+}
+
+.feature-copy p{
+  color:#d2dade;
+  margin-top:10px;
+}
+
+/* FAQ */
 
 details{
-  background:#09141d;
-  border:1px solid #1b303d;
-  border-radius:9px;
-  padding:15px;
-  margin-bottom:9px;
+  background:#09151e;
+  border:1px solid #223a48;
+  border-radius:12px;
+  margin-bottom:10px;
+  padding:16px;
 }
 
 summary{
+  font-weight:800;
   cursor:pointer;
-  font-weight:700;
 }
 
 details p{
-  padding-top:12px;
-  color:#b7c2ca;
-  line-height:1.55;
+  color:#aebac2;
+  margin-top:12px;
+  line-height:1.6;
 }
 
-/* ALT */
+/* CONTACT */
+
+.contact{
+  background:
+    radial-gradient(circle at 80% 30%,rgba(255,0,18,.13),transparent 45%),
+    #061019;
+}
+
+.contact .action-btn{
+  margin-top:12px;
+}
+
+/* FOOTER */
 
 footer{
   text-align:center;
-  padding:35px 20px 100px;
+  padding:40px 20px 105px;
   border-top:1px solid #1b2c36;
 }
 
-footer img{
-  width:220px;
-  max-height:120px;
+.footer-logo{
+  width:250px;
+  max-height:150px;
   object-fit:contain;
 }
 
 footer p{
-  color:#84939d;
-  margin-top:15px;
-  font-size:13px;
+  color:#8c9aa3;
+  font-size:14px;
+  margin-top:14px;
 }
 
-/* MOBİL SABİT BUTON */
+/* FIXED BAR */
 
 .mobile-bar{
   position:fixed;
   bottom:0;
   left:50%;
   transform:translateX(-50%);
-  width:min(100%,500px);
+  width:min(100%,520px);
+  z-index:999;
   display:grid;
   grid-template-columns:1fr 1fr;
-  z-index:999;
-  padding:8px;
-  gap:7px;
-  background:rgba(2,7,11,.96);
-  border-top:1px solid #20323e;
+  gap:8px;
+  padding:9px;
+  background:rgba(2,7,11,.98);
+  border-top:1px solid #243845;
+  backdrop-filter:blur(12px);
 }
 
 .mobile-bar a{
-  text-decoration:none;
-  color:white;
-  text-align:center;
-  padding:14px 5px;
-  border-radius:9px;
+  min-height:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
   font-weight:900;
+  font-size:16px;
 }
 
 .mobile-call{
@@ -402,93 +476,121 @@ footer p{
 }
 
 .mobile-wa{
-  background:#08ad45;
-}
-
-@media(min-width:700px){
-  .container{
-    box-shadow:0 0 80px #000;
-  }
+  background:#08b346;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
 
 <header>
-  <div class="logo">
-    <img src="631CA876-B488-481A-AD27-4F1D5FCABC33.png"
-         alt="Tulpar Oto Kurtarma">
-  </div>
-  <div class="menu">☰</div>
+  <img
+    class="header-logo"
+    src="631CA876-B488-481A-AD27-4F1D5FCABC33.png"
+    alt="Tulpar Oto Kurtarma Logo">
+  <div class="menu-icon">☰</div>
 </header>
 
-<div class="hero">
+<section class="hero">
 
-  <div class="badge">
-    <strong>7/24</strong>
-    <span>YOL YARDIM</span>
+  <img
+    class="hero-image"
+    src="8A72F892-C45E-4210-A666-B43E8779D0D0.png"
+    alt="Tulpar Oto Kurtarma Çekici">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="badge">
+      <strong>7/24</strong>
+      <span>YOL YARDIM</span>
+    </div>
+
+    <h1>
+      YOLDA<br>
+      YALNIZ<br>
+      <span class="red">DEĞİLSİNİZ</span>
+    </h1>
+
+    <p class="hero-sub">
+      Tulpar Oto Kurtarma ile yolda kaldığınızda hızlı ve güvenilir destek.
+      Bulunduğunuz konuma en uygun aracımızı yönlendiriyoruz.
+    </p>
+
+    <div class="hero-tags">
+      <div class="hero-tag">
+        <b>🛡️</b>
+        Hızlı<br>Müdahale
+      </div>
+
+      <div class="hero-tag">
+        <b>👥</b>
+        Profesyonel<br>Ekip
+      </div>
+
+      <div class="hero-tag">
+        <b>📍</b>
+        Geniş Hizmet<br>Ağı
+      </div>
+
+      <div class="hero-tag">
+        <b>₺</b>
+        Uygun<br>Fiyat
+      </div>
+    </div>
+
   </div>
 
-  <h1>
-    YOLDA<br>
-    YALNIZ<br>
-    <span class="red">DEĞİLSİNİZ</span>
-  </h1>
-
-  <p>Tulpar Oto Kurtarma her zaman yanınızda.</p>
-
-  <div class="truck">
-    <div class="truck-icon">🚚</div>
-    <div class="truck-text">TULPAR OTO KURTARMA</div>
-  </div>
-
-  <div class="features">
-    <div class="feature">
-      <b>🛡️</b>
-      Hızlı<br>Müdahale
-    </div>
-
-    <div class="feature">
-      <b>👥</b>
-      Profesyonel<br>Ekip
-    </div>
-
-    <div class="feature">
-      <b>📍</b>
-      Geniş Hizmet<br>Ağı
-    </div>
-
-    <div class="feature">
-      <b>₺</b>
-      Uygun<br>Fiyat
-    </div>
-  </div>
-
-</div>
+</section>
 
 <div class="actions">
 
-  <a class="call" href="tel:+905455212367">
-    ☎️ &nbsp; Hemen Ara&nbsp; +90 545 521 23 67
+  <a class="action-btn call-btn"
+     href="tel:+905455212367">
+    ☎️ Hemen Ara&nbsp; +90 545 521 23 67
   </a>
 
-  <a class="whatsapp"
-     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20yol%20yard%C4%B1m%20almak%20istiyorum.">
-    WhatsApp &nbsp; +90 545 521 23 67
+  <a class="action-btn wa-btn"
+     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20yard%C4%B1m%20almak%20istiyorum.">
+    WhatsApp&nbsp; +90 545 521 23 67
   </a>
 
-  <small>7/24 Oto Kurtarma • Yol Yardım</small>
+  <div class="mini-info">
+
+    <div>
+      <b>◷</b>
+      7/24<br>Hizmet
+    </div>
+
+    <div>
+      <b>🛡️</b>
+      Güvenli<br>Taşıma
+    </div>
+
+    <div>
+      <b>🛣️</b>
+      Geniş<br>Hizmet Ağı
+    </div>
+
+    <div>
+      <b>₺</b>
+      Uygun<br>Fiyat
+    </div>
+
+  </div>
 
 </div>
 
 <section>
 
-  <h2 class="section-title">
-    HİZMETLERİMİZ
-  </h2>
+  <h2 class="section-title">HİZMETLERİMİZ</h2>
+
+  <p class="section-sub">
+    Yolda kaldığınızda ihtiyacınız olan desteği hızlıca sağlıyoruz.
+  </p>
 
   <div class="services">
 
@@ -530,12 +632,12 @@ footer p{
 
   <h2 class="section-title">
     NEREDE OLURSANIZ OLUN<br>
-    <span>TULPAR YANINIZDA</span>
+    <span class="red">TULPAR YANINIZDA</span>
   </h2>
 
-  <p>
-    İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre illerde
-    hızlı oto kurtarma ve yol yardım hizmeti.
+  <p class="section-sub">
+    İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre bölgelerde
+    7/24 oto kurtarma ve yol yardım hizmeti.
   </p>
 
   <div class="locations">
@@ -544,7 +646,7 @@ footer p{
     <div class="location">GEBZE</div>
     <div class="location">YALOVA</div>
     <div class="location">SAKARYA</div>
-    <div class="location">VE TÜM ÇEVRE İLLER</div>
+    <div class="location">ÇEVRE İLLER</div>
   </div>
 
 </section>
@@ -555,41 +657,48 @@ footer p{
 
   <div class="why">
 
-    <div>
+    <div class="why-card">
       <b>🤝</b>
       Güvenilir Hizmet
     </div>
 
-    <div>
-      <b>⏱️</b>
-      Hızlı Ulaşım
+    <div class="why-card">
+      <b>⚡</b>
+      Hızlı Yönlendirme
     </div>
 
-    <div>
+    <div class="why-card">
       <b>👥</b>
-      Deneyimli Ekip
+      Profesyonel Ekip
     </div>
 
-    <div>
-      <b>₺</b>
-      Uygun Fiyat
+    <div class="why-card">
+      <b>📍</b>
+      Geniş Hizmet Ağı
     </div>
 
   </div>
 
 </section>
 
-<section class="professional">
+<section class="feature-photo">
 
-  <h2>
-    <span class="red">ARACINIZ GÜVENDE</span><br>
-    PROFESYONEL OTO KURTARMA
-  </h2>
+  <img
+    src="8A72F892-C45E-4210-A666-B43E8779D0D0.png"
+    alt="Profesyonel Oto Kurtarma">
 
-  <p>
-    Binek, SUV ve ticari araçlar için güvenli oto kurtarma,
-    araç taşıma ve yol yardım hizmeti.
-  </p>
+  <div class="feature-copy">
+
+    <h2>
+      <span class="red">ARACINIZ GÜVENDE</span><br>
+      PROFESYONEL OTO KURTARMA
+    </h2>
+
+    <p>
+      Binek, SUV ve ticari araçlar için güvenli oto kurtarma ve taşıma hizmeti.
+    </p>
+
+  </div>
 
 </section>
 
@@ -600,52 +709,59 @@ footer p{
   <details>
     <summary>Hangi bölgelere hizmet veriyorsunuz?</summary>
     <p>
-      İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre bölgelere
-      hizmet veriyoruz.
+      İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre bölgelere hizmet veriyoruz.
     </p>
   </details>
 
   <details>
-    <summary>Yakıt desteği hizmeti var mı?</summary>
+    <summary>Yakıt desteği hizmeti ücretli mi?</summary>
     <p>
-      Evet. Yolda yakıtınız bittiğinde konumunuza göre destek
-      sağlanabilir.
+      Ücret, bulunduğunuz konuma ve yapılacak yönlendirmeye göre değişebilir.
+      Güncel fiyat için bizi arayabilirsiniz.
     </p>
   </details>
 
   <details>
     <summary>Ödeme yöntemleri nelerdir?</summary>
     <p>
-      Ödeme seçenekleri için bizi arayarak bilgi alabilirsiniz.
+      Ödeme seçenekleri hakkında telefondan güncel bilgi alabilirsiniz.
     </p>
   </details>
 
   <details>
     <summary>Ne kadar sürede geliyorsunuz?</summary>
     <p>
-      Ulaşım süresi bulunduğunuz konuma, trafik durumuna ve
-      mevcut ekibin konumuna göre değişir.
+      Bulunduğunuz konuma en yakın aracımızın yönlendirilmesini sağlıyoruz.
+      Ulaşım süresi trafik ve konuma göre değişebilir.
+    </p>
+  </details>
+
+  <details>
+    <summary>Fiyatı nasıl öğrenebilirim?</summary>
+    <p>
+      Konumunuzu ve aracınızın durumunu telefon veya WhatsApp üzerinden gönderin.
+      Size uygun yönlendirme ve fiyat bilgisi verelim.
     </p>
   </details>
 
 </section>
 
-<section>
+<section class="contact">
 
-  <h2 class="section-title">
-    HEMEN İLETİŞİME GEÇİN
-  </h2>
+  <h2 class="section-title">HEMEN İLETİŞİME GEÇİN</h2>
 
-  <p style="color:#aebac2;margin-bottom:18px;">
-    Tulpar Oto Kurtarma 7/24 hizmetinizde.
+  <p class="section-sub">
+    Tulpar Oto Kurtarma 7/24 yanınızda.
+    Hemen arayın veya WhatsApp üzerinden konumunuzu gönderin.
   </p>
 
-  <a class="call" href="tel:+905455212367">
+  <a class="action-btn call-btn"
+     href="tel:+905455212367">
     ☎️ +90 545 521 23 67
   </a>
 
-  <a class="whatsapp"
-     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20yard%C4%B1m%20almak%20istiyorum.">
+  <a class="action-btn wa-btn"
+     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20konumumu%20g%C3%B6ndermek%20istiyorum.">
     WhatsApp ile Yaz
   </a>
 
@@ -653,12 +769,14 @@ footer p{
 
 <footer>
 
-  <img src="631CA876-B488-481A-AD27-4F1D5FCABC33.png"
-       alt="Tulpar Oto Kurtarma Logo">
+  <img
+    class="footer-logo"
+    src="631CA876-B488-481A-AD27-4F1D5FCABC33.png"
+    alt="Tulpar Oto Kurtarma">
 
   <p>
     © 2026 Tulpar Oto Kurtarma<br>
-    7/24 Yol Yardım
+    7/24 Oto Kurtarma & Yol Yardım
   </p>
 
 </footer>
