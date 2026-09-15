@@ -10,6 +10,25 @@
 
   gtag('config', 'AW-18446979494');
 </script>
+  <!-- Event snippet for Tıkla ve ara conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18446979494/KEdbCLir9PgcEKajmtxE',
+      'value': 1.0,
+      'currency': 'TRY',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -558,7 +577,8 @@ footer p{
 <div class="actions">
 
   <a class="action-btn call-btn"
-     href="tel:+905455212367">
+     href="tel:+905455212367"
+    onclick="return gtag_report_conversion('tel:+905455212367');">
     ☎️ Hemen Ara&nbsp; +90 545 521 23 67
   </a>
 
@@ -765,7 +785,8 @@ footer p{
   </p>
 
   <a class="action-btn call-btn"
-     href="tel:+905455212367">
+     href="tel:+905455212367"
+    onclick="return gtag_report_conversion('tel:+905455212367');">
     ☎️ +90 545 521 23 67
   </a>
 
@@ -794,8 +815,9 @@ footer p{
 
 <div class="mobile-bar">
 
-  <a class="mobile-call"
-     href="tel:+905455212367">
+    <a class="mobile-call"
+   href="tel:+905455212367"
+   onclick="return gtag_report_conversion('tel:+905455212367');">
     ☎️ HEMEN ARA
   </a>
 
