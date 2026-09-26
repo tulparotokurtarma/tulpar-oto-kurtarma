@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tulparotokurtarma.com.tr/sitemap.xml
