@@ -24,7 +24,43 @@ summary{font-weight:800}details p{color:#b3bfc6}footer{text-align:center;padding
 footer img{width:210px;max-height:110px;object-fit:contain}.mobile{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,620px);display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;background:#02070bf8}
 .mobile a{min-height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900}
 @media(max-width:430px){h1{font-size:38px}}
-</style></head>
+</style>
+  <script>
+function gtag_report_whatsapp_conversion(url) {
+  let finished = false;
+
+  function goToWhatsApp() {
+    if (finished) return;
+    finished = true;
+    if (url) window.location.href = url;
+  }
+
+  if (typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18446979494/Wu8HCOq7sIgdEKajmtxE',
+      'value': 1.0,
+      'currency': 'TRY',
+      'event_callback': goToWhatsApp
+    });
+
+    setTimeout(goToWhatsApp, 900);
+  } else {
+    goToWhatsApp();
+  }
+
+  return false;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      gtag_report_whatsapp_conversion(this.href);
+    });
+  });
+});
+</script>
+</head>
 <body><div class="wrap"><header><a href="/"><img class="logo" src="image (1).webp" alt="Tulpar Oto Kurtarma"></a><a class="topcall" href="tel:+905455212367" onclick="return gtag_report_conversion('tel:+905455212367')">HEMEN ARA</a></header>
 <div class="hero"><img fetchpriority="high" src="image.webp" alt="7/24 OTO ÇEKİCİ"><div class="shade"></div><div class="copy"><span class="badge">7/24 OTO ÇEKİCİ</span><h1>İSTANBUL <span class="red">OTO ÇEKİCİ</span><br>ARAÇ ÇEKİCİ & OTO KURTARMA</h1><p class="lead">Aracınız yolda kaldıysa konumunuza en yakın çekiciyi hızlıca yönlendiriyoruz. İstanbul genelinde 7/24 oto çekici, araç taşıma ve oto kurtarma desteği.</p></div></div>
 <div class="actions"><a class="btn call" href="tel:+905455212367" onclick="return gtag_report_conversion('tel:+905455212367')">☎️ +90 545 521 23 67</a><a class="btn wa" href="https://wa.me/905455212367">WhatsApp'tan Konum Gönder</a></div>
