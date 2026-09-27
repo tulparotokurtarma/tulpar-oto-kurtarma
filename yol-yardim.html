@@ -3,7 +3,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18446979494"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-18446979494');
-function gtag_report_conversion(url){var cb=function(){if(url)window.location=url};gtag('event','conversion',{'send_to':'AW-18446979494/KEdbCLir9PgcEKajmtxE','value':1.0,'currency':'TRY','event_callback':cb});return false}
+function gtag_report_conversion(url){const S='tulpar_call_counted',T='tulpar_last_call_conversion',M=180000,n=Date.now();let s=false,l=0;try{s=sessionStorage.getItem(S)==='1';l=Number(localStorage.getItem(T)||0)}catch(e){}const go=()=>{if(url)window.location.href=url};if(s||(l&&n-l<M)){go();return false}try{sessionStorage.setItem(S,'1');localStorage.setItem(T,String(n))}catch(e){}let d=false;const done=()=>{if(d)return;d=true;go()};if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-18446979494/KEdbCLir9PgcEKajmtxE','value':1.0,'currency':'TRY','event_callback':done,'event_timeout':800});setTimeout(done,900)}else{done()}return false}
 </script>
 <style>
 *{box-sizing:border-box}body{margin:0;background:#02070b;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.55}
