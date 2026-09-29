@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <!-- Google tag (gtag.js) -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>İstanbul 7/24 Yol Yardım | Oto Çekici & Oto Kurtarma | Tulpar</title>
+<meta name="description" content="İstanbul'da 7/24 yol yardım, oto çekici ve oto kurtarma. Yolda kalan aracınız için konumunuza uygun çekiciyi hızlıca yönlendiriyoruz.">
+<link rel="canonical" href="https://tulparotokurtarma.com.tr/yol-yardim.html">
+<meta name="theme-color" content="#03090e">
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18446979494"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','AW-18446979494');
 
-  gtag('config', 'AW-18446979494');
-</script>
-  <!-- Event snippet for Tıkla ve ara conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
 function gtag_report_conversion(url) {
   let finished = false;
-
   function openPhone() {
     if (finished) return;
     finished = true;
@@ -23,501 +25,62 @@ function gtag_report_conversion(url) {
   }
 
   if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18446979494/KEdbCLir9PgcEKajmtxE',
-      'value': 1.0,
-      'currency': 'TRY',
-      'event_callback': openPhone,
-      'event_timeout': 800
+    gtag('event','conversion',{
+      'send_to':'AW-18446979494/KEdbCLir9PgcEKajmtxE',
+      'value':1.0,
+      'currency':'TRY',
+      'event_callback':openPhone,
+      'event_timeout':800
     });
-
-    setTimeout(openPhone, 900);
+    setTimeout(openPhone,900);
   } else {
     openPhone();
   }
-
   return false;
 }
 </script>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>İstanbul 7/24 Oto Çekici & Oto Kurtarma | Tulpar</title>
-
-<meta name="description" content="Tulpar Oto Kurtarma; İstanbul ve çevresinde 7/24 oto çekici, oto kurtarma ve yol yardım hizmeti sunar. Size en yakın aracı hızlıca yönlendiriyoruz.">
-<meta name="theme-color" content="#03090e">
-
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  background:#02070b;
-  color:#fff;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-  line-height:1.45;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-.page{
-  width:min(100%,520px);
-  margin:auto;
-  background:#061019;
-  min-height:100vh;
-  overflow:hidden;
-  box-shadow:0 0 80px rgba(0,0,0,.75);
-}
-
-/* HEADER */
-
-header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  min-height:95px;
-  padding:10px 18px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  background:rgba(2,8,13,.97);
-  border-bottom:1px solid #21313d;
-  backdrop-filter:blur(12px);
-}
-
-.header-logo{
-  width:155px;
-  height:75px;
-  object-fit:contain;
-}
-
-.menu-icon{
-  font-size:34px;
-  line-height:1;
-  font-weight:700;
-}
-
-/* HERO */
-
-.hero{
-  position:relative;
-  min-height:760px;
-  background:#02080d;
-  overflow:hidden;
-}
-
-.hero-image{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  object-position:center;
-}
-
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(to bottom,rgba(0,5,9,.15) 0%,rgba(0,5,9,.35) 37%,rgba(0,5,9,.94) 100%),
-    linear-gradient(to right,rgba(0,0,0,.48),rgba(0,0,0,.06));
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  padding:50px 28px 36px;
-  min-height:760px;
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
-}
-
-.badge{
-  position:absolute;
-  top:34px;
-  right:22px;
-  background:linear-gradient(135deg,#a90000,#ff1724);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:12px;
-  padding:14px 20px;
-  text-align:center;
-  box-shadow:0 12px 35px rgba(0,0,0,.55);
-  transform:rotate(-2deg);
-}
-
-.badge strong{
-  display:block;
-  font-size:37px;
-  line-height:1;
-}
-
-.badge span{
-  display:block;
-  margin-top:4px;
-  font-size:12px;
-  font-weight:900;
-}
-
-.hero h1{
-  font-size:48px;
-  line-height:.98;
-  letter-spacing:-1px;
-  text-shadow:0 5px 20px rgba(0,0,0,.65);
-}
-
-.hero h1 .red{
-  color:#ff1724;
-}
-
-.hero-sub{
-  margin-top:18px;
-  max-width:390px;
-  font-size:19px;
-  color:#d9e0e5;
-  text-shadow:0 2px 12px rgba(0,0,0,.8);
-}
-
-.hero-tags{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:8px;
-  margin-top:26px;
-}
-
-.hero-tag{
-  text-align:center;
-  font-size:11px;
-  font-weight:700;
-  color:#e9edf0;
-}
-
-.hero-tag b{
-  display:block;
-  font-size:25px;
-  margin-bottom:5px;
-}
-
-/* ACTIONS */
-
-.actions{
-  padding:22px 22px 25px;
-  background:#061019;
-}
-
-.action-btn{
-  min-height:70px;
-  border-radius:13px;
-  margin-bottom:12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:14px;
-  font-weight:900;
-  font-size:20px;
-  box-shadow:0 10px 28px rgba(0,0,0,.26);
-}
-
-.call-btn{
-  background:linear-gradient(135deg,#d60010,#ff202d);
-}
-
-.wa-btn{
-  background:linear-gradient(135deg,#079b38,#0fc754);
-}
-
-.mini-info{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:8px;
-  border-top:1px solid #182833;
-  border-bottom:1px solid #182833;
-  padding:18px 0 2px;
-  margin-top:18px;
-}
-
-.mini-info div{
-  text-align:center;
-  font-size:11px;
-  color:#cfd6db;
-  min-height:68px;
-}
-
-.mini-info b{
-  display:block;
-  font-size:24px;
-  margin-bottom:4px;
-}
-
-/* GENERAL SECTIONS */
-
-section{
-  padding:34px 24px;
-  border-top:1px solid #1a2a35;
-}
-
-.section-title{
-  font-size:28px;
-  margin-bottom:18px;
-  letter-spacing:-.4px;
-}
-
-.section-title .red{
-  color:#ff1724;
-}
-
-.section-sub{
-  color:#aab7c0;
-  margin-bottom:22px;
-  font-size:16px;
-  line-height:1.6;
-}
-
-/* SERVICES */
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-}
-
-.service{
-  min-height:132px;
-  border-radius:14px;
-  border:1px solid #213846;
-  background:
-    linear-gradient(145deg,rgba(16,31,42,.98),rgba(7,16,24,.98));
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:18px 10px;
-  box-shadow:inset 0 0 30px rgba(255,255,255,.012);
-}
-
-.service b{
-  display:block;
-  font-size:39px;
-  margin-bottom:9px;
-}
-
-.service strong{
-  font-size:16px;
-}
-
-/* AREAS */
-
-.area{
-  background:
-    radial-gradient(circle at 75% 50%,rgba(255,0,22,.12),transparent 35%),
-    #061019;
-}
-
-.locations{
-  display:grid;
-  gap:10px;
-}
-
-.location{
-  min-height:61px;
-  border-radius:11px;
-  border:1px solid #213b49;
-  background:#0a1620;
-  display:flex;
-  align-items:center;
-  padding:0 18px;
-  font-weight:900;
-  font-size:16px;
-}
-
-.location::before{
-  content:"";
-  width:13px;
-  height:13px;
-  border-radius:50%;
-  background:#ff1724;
-  margin-right:13px;
-  box-shadow:0 0 15px rgba(255,23,36,.45);
-}
-
-/* WHY */
-
-.why{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:12px;
-}
-
-.why-card{
-  min-height:125px;
-  background:#08131c;
-  border:1px solid #223846;
-  border-radius:14px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:14px;
-}
-
-.why-card b{
-  display:block;
-  font-size:30px;
-  margin-bottom:8px;
-}
-
-/* FEATURE IMAGE */
-
-.feature-photo{
-  position:relative;
-  min-height:330px;
-  overflow:hidden;
-  padding:0;
-}
-
-.feature-photo img{
-  width:100%;
-  height:330px;
-  object-fit:cover;
-  object-position:center;
-  display:block;
-}
-
-.feature-photo::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(to top,rgba(3,8,13,.92),rgba(3,8,13,.12) 60%),
-    linear-gradient(to right,rgba(130,0,10,.18),transparent);
-}
-
-.feature-copy{
-  position:absolute;
-  z-index:2;
-  left:24px;
-  right:24px;
-  bottom:25px;
-}
-
-.feature-copy h2{
-  font-size:30px;
-  line-height:1.05;
-}
-
-.feature-copy .red{
-  color:#ff1724;
-}
-
-.feature-copy p{
-  color:#d2dade;
-  margin-top:10px;
-}
-
-/* FAQ */
-
-details{
-  background:#09151e;
-  border:1px solid #223a48;
-  border-radius:12px;
-  margin-bottom:10px;
-  padding:16px;
-}
-
-summary{
-  font-weight:800;
-  cursor:pointer;
-}
-
-details p{
-  color:#aebac2;
-  margin-top:12px;
-  line-height:1.6;
-}
-
-/* CONTACT */
-
-.contact{
-  background:
-    radial-gradient(circle at 80% 30%,rgba(255,0,18,.13),transparent 45%),
-    #061019;
-}
-
-.contact .action-btn{
-  margin-top:12px;
-}
-
-/* FOOTER */
-
-footer{
-  text-align:center;
-  padding:40px 20px 105px;
-  border-top:1px solid #1b2c36;
-}
-
-.footer-logo{
-  width:250px;
-  max-height:150px;
-  object-fit:contain;
-}
-
-footer p{
-  color:#8c9aa3;
-  font-size:14px;
-  margin-top:14px;
-}
-
-/* FIXED BAR */
-
-.mobile-bar{
-  position:fixed;
-  bottom:0;
-  left:50%;
-  transform:translateX(-50%);
-  width:min(100%,520px);
-  z-index:999;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:8px;
-  padding:9px;
-  background:rgba(2,7,11,.98);
-  border-top:1px solid #243845;
-  backdrop-filter:blur(12px);
-}
-
-.mobile-bar a{
-  min-height:58px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:10px;
-  font-weight:900;
-  font-size:16px;
-}
-
-.mobile-call{
-  background:#ef1723;
-}
-
-.mobile-wa{
-  background:#08b346;
-}
+*{box-sizing:border-box}
+body{margin:0;background:#02070b;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:620px;margin:auto;background:#061019;min-height:100vh}
+header{position:sticky;top:0;z-index:5;background:#02080df5;padding:10px 18px;border-bottom:1px solid #20313c;display:flex;align-items:center;justify-content:space-between}
+.logo{width:150px;height:72px;object-fit:contain}
+.topcall,.call{background:#ef1723}
+.wa{background:#09ad45}
+.topcall{padding:12px 14px;border-radius:10px;font-weight:900}
+.hero{position:relative;min-height:560px;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.shade{position:absolute;inset:0;background:linear-gradient(to bottom,#0002,#02070bf2 90%)}
+.copy{position:relative;z-index:2;min-height:560px;padding:48px 24px 32px;display:flex;flex-direction:column;justify-content:flex-end}
+.badge{background:#ef1723;padding:8px 12px;border-radius:999px;width:max-content;font-weight:900;font-size:13px;margin-bottom:14px}
+h1{font-size:42px;line-height:1.03;margin:0}
+.red{color:#ff1724}
+.lead{font-size:18px;color:#d9e0e5}
+.actions,section{padding:22px}
+.btn{display:flex;align-items:center;justify-content:center;min-height:62px;border-radius:12px;margin:10px 0;font-size:18px;font-weight:900;text-align:center;padding:10px}
+section{border-top:1px solid #1c2d38}
+h2{font-size:27px;margin:0 0 12px}
+.sub{color:#acbac3}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:#0a1720;border:1px solid #213946;border-radius:12px;padding:16px}
+.card strong{display:block;margin-bottom:5px}
+.card p{color:#afbbc3;font-size:14px;margin:0}
+.areas{display:flex;flex-wrap:wrap;gap:8px}
+.areas span{background:#0a1720;border:1px solid #213946;border-radius:999px;padding:8px 11px;font-size:13px;font-weight:800}
+.note{background:#101922;border:1px solid #394956;border-radius:10px;padding:13px;color:#cbd4da}
+details{background:#0a1720;border:1px solid #213946;border-radius:10px;padding:14px;margin:9px 0}
+summary{font-weight:800}
+details p{color:#b3bfc6}
+footer{text-align:center;padding:30px 20px 95px;border-top:1px solid #1b2b35;color:#91a0a9}
+footer img{width:210px;max-height:110px;object-fit:contain}
+.mobile{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,620px);display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;background:#02070bf8}
+.mobile a{min-height:56px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:900}
+@media(max-width:430px){h1{font-size:38px}}
 </style>
-  <script>
+
+<script>
 function gtag_report_whatsapp_conversion(url) {
   let finished = false;
 
@@ -528,14 +91,13 @@ function gtag_report_whatsapp_conversion(url) {
   }
 
   if (typeof gtag === 'function') {
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18446979494/Wu8HCOq7sIgdEKajmtxE',
-      'value': 1.0,
-      'currency': 'TRY',
-      'event_callback': goToWhatsApp
+    gtag('event','conversion',{
+      'send_to':'AW-18446979494/Wu8HCOq7sIgdEKajmtxE',
+      'value':1.0,
+      'currency':'TRY',
+      'event_callback':goToWhatsApp
     });
-
-    setTimeout(goToWhatsApp, 900);
+    setTimeout(goToWhatsApp,900);
   } else {
     goToWhatsApp();
   }
@@ -543,9 +105,9 @@ function gtag_report_whatsapp_conversion(url) {
   return false;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (link) {
-    link.addEventListener('click', function (event) {
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function(link){
+    link.addEventListener('click',function(event){
       event.preventDefault();
       gtag_report_whatsapp_conversion(this.href);
     });
@@ -555,327 +117,118 @@ document.addEventListener('DOMContentLoaded', function () {
 </head>
 
 <body>
-
-<div class="page">
+<div class="wrap">
 
 <header>
-  <img
-    class="header-logo"
-    src="image (1).webp"
-    alt="Tulpar Oto Kurtarma Logo">
-  <div class="menu-icon">☰</div>
+<a href="/"><img class="logo" src="image (1).webp" alt="Tulpar Oto Kurtarma"></a>
+<a class="topcall" href="tel:+905455212367" onclick="return gtag_report_conversion('tel:+905455212367')">HEMEN ARA</a>
 </header>
 
-<section class="hero">
+<div class="hero">
+<img fetchpriority="high" decoding="async" src="image.webp" alt="İstanbul 7/24 yol yardım oto çekici ve oto kurtarma">
+<div class="shade"></div>
 
-  <img
-    class="hero-image"
-    fetchpriority="high"
-    src="image.webp"
-    alt="Tulpar Oto Kurtarma Çekici">
-
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-
-    <div class="badge">
-      <strong>7/24</strong>
-      <span>YOL YARDIM</span>
-    </div>
-
-   <h1>
-  İSTANBUL 7/24<br>
-  OTO ÇEKİCİ &amp;<br>
-  <span class="red">OTO KURTARMA</span>
-</h1>
-
-<p class="hero-sub">
-  İstanbul genelinde 7/24 oto çekici, oto kurtarma ve acil çekici hizmeti.
-  Size en yakın çekiciyi yönlendiriyoruz. Hızlı fiyat bilgisi ve çekici çağırmak için hemen arayın.
-</p>
-
-<p class="hero-sub">
-  Çekici fiyatları; konum, mesafe ve aracın durumuna göre belirlenir.
-  İstanbul oto çekici ve yol yardım ihtiyaçlarınızda hızlı araç yönlendirmesi sağlıyoruz.
-</p>
-    <div class="hero-tags">
-      <div class="hero-tag">
-        <b>🛡️</b>
-        Hızlı<br>Müdahale
-      </div>
-
-      <div class="hero-tag">
-        <b>👥</b>
-        Profesyonel<br>Ekip
-      </div>
-
-      <div class="hero-tag">
-        <b>📍</b>
-        Geniş Hizmet<br>Ağı
-      </div>
-
-      <div class="hero-tag">
-        <b>₺</b>
-        Uygun<br>Fiyat
-      </div>
-    </div>
-
-  </div>
-
-</section>
+<div class="copy">
+<span class="badge">7/24 YOL YARDIM</span>
+<h1>İSTANBUL <span class="red">YOL YARDIM</span><br>OTO ÇEKİCİ & OTO KURTARMA</h1>
+<p class="lead">Aracınız yolda kaldıysa konumunuza uygun çekiciyi hızlıca yönlendiriyoruz. İstanbul'da 7/24 yol yardım, oto çekici ve oto kurtarma için hemen arayın.</p>
+</div>
+</div>
 
 <div class="actions">
-
-  <a class="action-btn call-btn"
-     href="tel:+905455212367"
-    onclick="return gtag_report_conversion('tel:+905455212367');">
-    ☎️ Hemen Ara&nbsp; +90 545 521 23 67
-  </a>
-
-  <a class="action-btn wa-btn"
-     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20yard%C4%B1m%20almak%20istiyorum.">
-    WhatsApp&nbsp; +90 545 521 23 67
-  </a>
-
-  <div class="mini-info">
-
-    <div>
-      <b>◷</b>
-      7/24<br>Hizmet
-    </div>
-
-    <div>
-      <b>🛡️</b>
-      Güvenli<br>Taşıma
-    </div>
-
-    <div>
-      <b>🛣️</b>
-      Geniş<br>Hizmet Ağı
-    </div>
-
-    <div>
-      <b>₺</b>
-      Uygun<br>Fiyat
-    </div>
-
-  </div>
-
+<a class="btn call" href="tel:+905455212367" onclick="return gtag_report_conversion('tel:+905455212367')">☎️ +90 545 521 23 67</a>
+<a class="btn wa" href="https://wa.me/905455212367">WhatsApp'tan Konum Gönder</a>
 </div>
 
 <section>
+<h2>YOL YARDIM HİZMETLERİ</h2>
 
-  <h2 class="section-title">HİZMETLERİMİZ</h2>
+<div class="grid">
+<div class="card">
+<strong>🚚 Oto Çekici</strong>
+<p>Yolda kalan aracınız için konuma göre çekici yönlendirmesi.</p>
+</div>
 
-  <p class="section-sub">
-    Yolda kaldığınızda ihtiyacınız olan desteği hızlıca sağlıyoruz.
-  </p>
+<div class="card">
+<strong>🔧 Oto Kurtarma</strong>
+<p>Hareket edemeyen araçlar için uygun kurtarma yönlendirmesi.</p>
+</div>
 
-  <div class="services">
+<div class="card">
+<strong>⚡ Acil Çekici</strong>
+<p>7/24 acil çekici ihtiyacında hızlı iletişim ve yönlendirme.</p>
+</div>
 
-    <div class="service">
-      <b>🚚</b>
-      <strong>Araç Çekme</strong>
-    </div>
+<div class="card">
+<strong>🚙 Araç Taşıma</strong>
+<p>Binek ve uygun hafif ticari araçlar için araç taşıma.</p>
+</div>
+</div>
 
-    <div class="service">
-      <b>🛣️</b>
-      <strong>Yol Yardım</strong>
-    </div>
-
-    <div class="service">
-      <b>🔋</b>
-      <strong>Akü Takviye</strong>
-    </div>
-
-    <div class="service">
-      <b>🛞</b>
-      <strong>Acil Oto Çekici</strong>
-    </div>
-
-    <div class="service">
-      <b>⛽</b>
-      <strong>Yakıt Desteği</strong>
-    </div>
-
-    <div class="service">
-      <b>🔧</b>
-<strong>Oto Kurtarma</strong>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="area">
-
-  <h2 class="section-title">
-    NEREDE OLURSANIZ OLUN<br>
-    <span class="red">TULPAR YANINIZDA</span>
-  </h2>
-
-  <p class="section-sub">
-    İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre bölgelerde
-    7/24 oto kurtarma ve yol yardım hizmeti.
-  </p>
-
-  <div class="locations">
-    <div class="location">İSTANBUL</div>
-    <div class="location">KOCAELİ</div>
-    <div class="location">GEBZE</div>
-    <div class="location">YALOVA</div>
-    <div class="location">SAKARYA</div>
-    <div class="location">ÇEVRE İLLER</div>
-  </div>
-
+<p class="note" style="margin-top:14px">
+<strong>Not:</strong> Lastik değişimi, akü takviye, yakıt desteği ve mekanik arıza tamiri hizmetimiz bulunmamaktadır.
+</p>
 </section>
 
 <section>
+<h2>HİZMET BÖLGELERİ</h2>
 
-  <h2 class="section-title">NEDEN TULPAR?</h2>
+<p class="sub">İstanbul Avrupa Yakası başta olmak üzere Ümraniye ve Üsküdar dahil hedef bölgelerde konumunuza uygun çekici yönlendiriyoruz.</p>
 
-  <div class="why">
-
-    <div class="why-card">
-      <b>🤝</b>
-      Güvenilir Hizmet
-    </div>
-
-    <div class="why-card">
-      <b>⚡</b>
-      Hızlı Yönlendirme
-    </div>
-
-    <div class="why-card">
-      <b>👥</b>
-      Profesyonel Ekip
-    </div>
-
-    <div class="why-card">
-      <b>📍</b>
-      Geniş Hizmet Ağı
-    </div>
-
-  </div>
-
-</section>
-
-<section class="feature-photo">
-
-  <img
-    src="image.webp"
-    alt="Profesyonel Oto Kurtarma">
-
-  <div class="feature-copy">
-
-    <h2>
-      <span class="red">ARACINIZ GÜVENDE</span><br>
-      PROFESYONEL OTO KURTARMA
-    </h2>
-
-    <p>
-      Binek, SUV ve ticari araçlar için güvenli oto kurtarma ve taşıma hizmeti.
-    </p>
-
-  </div>
-
+<div class="areas">
+<span>Başakşehir</span>
+<span>Bağcılar</span>
+<span>Esenler</span>
+<span>Küçükçekmece</span>
+<span>Avcılar</span>
+<span>Beylikdüzü</span>
+<span>Bakırköy</span>
+<span>Zeytinburnu</span>
+<span>Şişli</span>
+<span>Beşiktaş</span>
+<span>Kağıthane</span>
+<span>Sarıyer</span>
+<span>Arnavutköy</span>
+<span>Ümraniye</span>
+<span>Üsküdar</span>
+</div>
 </section>
 
 <section>
+<h2>SIK SORULAN SORULAR</h2>
 
-  <h2 class="section-title">SIK SORULAN SORULAR</h2>
+<details>
+<summary>Yol yardım neleri kapsıyor?</summary>
+<p>Tulpar yol yardım hizmeti oto çekici, araç taşıma ve oto kurtarma yönlendirmesini kapsar.</p>
+</details>
 
-  <details>
-    <summary>Hangi bölgelere hizmet veriyorsunuz?</summary>
-    <p>
-      İstanbul, Kocaeli, Gebze, Yalova, Sakarya ve çevre bölgelere hizmet veriyoruz.
-    </p>
-  </details>
+<details>
+<summary>En yakın çekici ne kadar sürede gelir?</summary>
+<p>Süre konum, trafik ve en yakın aracın müsaitliğine göre değişir.</p>
+</details>
 
-  <details>
-    <summary>Yakıt desteği hizmeti ücretli mi?</summary>
-    <p>
-      Ücret, bulunduğunuz konuma ve yapılacak yönlendirmeye göre değişebilir.
-      Güncel fiyat için bizi arayabilirsiniz.
-    </p>
-  </details>
-
-  <details>
-    <summary>Ödeme yöntemleri nelerdir?</summary>
-    <p>
-      Ödeme seçenekleri hakkında telefondan güncel bilgi alabilirsiniz.
-    </p>
-  </details>
-
-  <details>
-    <summary>Ne kadar sürede geliyorsunuz?</summary>
-    <p>
-      Bulunduğunuz konuma en yakın aracımızın yönlendirilmesini sağlıyoruz.
-      Ulaşım süresi trafik ve konuma göre değişebilir.
-    </p>
-  </details>
-
-  <details>
-    <summary>Fiyatı nasıl öğrenebilirim?</summary>
-    <p>
-      Konumunuzu ve aracınızın durumunu telefon veya WhatsApp üzerinden gönderin.
-      Size uygun yönlendirme ve fiyat bilgisi verelim.
-    </p>
-  </details>
-
+<details>
+<summary>Yol yardım ve çekici fiyatları ne kadar?</summary>
+<p>Fiyat konum, mesafe ve aracın durumuna göre değişir. Güncel fiyat bilgisi için bizi arayabilirsiniz.</p>
+</details>
 </section>
 
-<section class="contact">
-
-  <h2 class="section-title">HEMEN İLETİŞİME GEÇİN</h2>
-
-  <p class="section-sub">
-    Tulpar Oto Kurtarma 7/24 yanınızda.
-    Hemen arayın veya WhatsApp üzerinden konumunuzu gönderin.
-  </p>
-
-  <a class="action-btn call-btn"
-     href="tel:+905455212367"
-    onclick="return gtag_report_conversion('tel:+905455212367');">
-    ☎️ +90 545 521 23 67
-  </a>
-
-  <a class="action-btn wa-btn"
-     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20konumumu%20g%C3%B6ndermek%20istiyorum.">
-    WhatsApp ile Yaz
-  </a>
-
+<section>
+<h2>HEMEN İLETİŞİME GEÇİN</h2>
+<p class="sub">Konumunuzu paylaşın; uygun çekici yönlendirmesi ve güncel fiyat bilgisi için bizi arayın.</p>
+<a class="btn call" href="tel:+905455212367" onclick="return gtag_report_conversion('tel:+905455212367')">☎️ Hemen Ara</a>
 </section>
 
 <footer>
-
-  <img
-    class="footer-logo"
-    src="image (1).webp"
-    alt="Tulpar Oto Kurtarma">
-
-  <p>
-    © 2026 Tulpar Oto Kurtarma<br>
-    7/24 Oto Kurtarma & Yol Yardım
-  </p>
-
+<img src="image (1).webp" alt="Tulpar Oto Kurtarma">
+<p>© 2026 Tulpar Oto Kurtarma</p>
 </footer>
 
 </div>
 
-<div class="mobile-bar">
-
-    <a class="mobile-call"
-   href="tel:+905455212367"
-   onclick="return gtag_report_conversion('tel:+905455212367');">
-    ☎️ HEMEN ARA
-  </a>
-
-  <a class="mobile-wa"
-     href="https://wa.me/905455212367?text=Merhaba%20Tulpar%20Oto%20Kurtarma%2C%20yard%C4%B1m%20almak%20istiyorum.">
-    WhatsApp
-  </a>
-
+<div class="mobile">
+<a class="call" href="tel:+905455212367" onclick="return gtag_report_conversion('tel:+905455212367')">☎️ HEMEN ARA</a>
+<a class="wa" href="https://wa.me/905455212367">WhatsApp</a>
 </div>
 
 </body>
