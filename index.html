@@ -14,40 +14,12 @@
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
 function gtag_report_conversion(url) {
-  const SESSION_KEY = 'tulpar_call_counted';
-  const TIME_KEY = 'tulpar_last_call_conversion';
-  const THREE_MINUTES = 3 * 60 * 1000;
-  const now = Date.now();
-
-  let countedThisSession = false;
-  let lastConversion = 0;
-
-  try {
-    countedThisSession = sessionStorage.getItem(SESSION_KEY) === '1';
-    lastConversion = Number(localStorage.getItem(TIME_KEY) || 0);
-  } catch(e) {}
-
-  function openPhone() {
-    if (url) window.location.href = url;
-  }
-
-  if (countedThisSession ||
-      (lastConversion && now - lastConversion < THREE_MINUTES)) {
-    openPhone();
-    return false;
-  }
-
-  try {
-    sessionStorage.setItem(SESSION_KEY, '1');
-    localStorage.setItem(TIME_KEY, String(now));
-  } catch(e) {}
-
   let finished = false;
 
-  function finish() {
+  function openPhone() {
     if (finished) return;
     finished = true;
-    openPhone();
+    if (url) window.location.href = url;
   }
 
   if (typeof gtag === 'function') {
@@ -55,13 +27,13 @@ function gtag_report_conversion(url) {
       'send_to': 'AW-18446979494/KEdbCLir9PgcEKajmtxE',
       'value': 1.0,
       'currency': 'TRY',
-      'event_callback': finish,
+      'event_callback': openPhone,
       'event_timeout': 800
     });
 
-    setTimeout(finish, 900);
+    setTimeout(openPhone, 900);
   } else {
-    finish();
+    openPhone();
   }
 
   return false;
