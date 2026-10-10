@@ -285,6 +285,25 @@ font-weight:900
 @media(max-width:430px){
 h1{font-size:38px}
 }
+
+/* Keep contact actions usable above page content on small screens. */
+.mobile{z-index:20;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+footer{padding-bottom:calc(100px + env(safe-area-inset-bottom,0px))}
+a:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.service-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:18px 0}
+.service-nav a{text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.price-info{margin:12px 0 0;color:#d9e0e5;font-size:15px}
+@media(max-width:620px){
+.hero,.copy{min-height:0}
+.copy{padding:32px 20px 24px}
+h1{font-size:clamp(28px,8vw,38px);line-height:1.12;overflow-wrap:break-word}
+.lead{font-size:17px}
+.logo{width:120px;height:58px}
+header{padding:8px 14px}
+.shade{background:linear-gradient(to bottom,#02070b88,#02070bf5 90%)}
+}
+@media(max-width:360px){.grid{grid-template-columns:1fr}.topcall{padding:10px;font-size:14px}}
+
 </style>
 
 <script>
@@ -368,6 +387,7 @@ EN YAKIN ÇEKİCİ & OTO KURTARMA
 Yolda kaldıysanız konumunuza uygun çekiciyi hızlıca yönlendiriyoruz.
 İstanbul'da 7/24 oto çekici, araç taşıma ve oto kurtarma için hemen arayın.
 </p>
+<p class="price-info">Fiyat; konum, mesafe ve aracın durumuna göre belirlenir. Güncel fiyat ve müsaitlik için arayın.</p>
 
 </div>
 </div>
@@ -468,6 +488,7 @@ onclick="return gtag_report_conversion('tel:+905455212367')">
 <span>Bahçelievler</span>
 <span>Zeytinburnu</span>
 <span>Bakırköy</span>
+<span>Büyükçekmece</span>
 
 </div>
 
@@ -539,6 +560,7 @@ WhatsApp'tan Konum Gönder
 © 2026 Tulpar Oto Kurtarma
 </p>
 
+<nav class="service-nav" aria-label="Hizmet sayfaları"><a href="/oto-cekici.html">Oto Çekici</a><a href="/oto-kurtarma.html">Oto Kurtarma</a><a href="/yol-yardim.html">Çekici Yol Yardım</a></nav>
 </footer>
 
 </div>
